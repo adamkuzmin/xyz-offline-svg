@@ -5,11 +5,11 @@ import { createGlobalStyle } from "styled-components";
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
-      <AuthWrapper>
-        <GlobalStyle />
-      </AuthWrapper>
+      <GlobalStyle />
 
-      <Component {...pageProps} />
+      <AuthWrapper>
+        <Component {...pageProps} />
+      </AuthWrapper>
     </>
   );
 };
